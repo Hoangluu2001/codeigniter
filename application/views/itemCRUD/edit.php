@@ -4,13 +4,13 @@
             <h2>Edit Item</h2>
         </div>
         <div class="pull-right">
-            <a class="btn btn-primary" href="<?php echo base_url('itemCRUD');?>"> Back</a>
+            <a class="btn btn-primary" href="<?php echo base_url('index.php/itemCRUD');?>"> Back</a>
         </div>
     </div>
 </div>
 
 
-<form method="post" action="<?php echo base_url('itemCRUD/update/'.$item->id);?>">
+<form method="post" action="<?php echo base_url('index.php/itemCRUD/update/'.$item->id);?>">
     <?php
 
 

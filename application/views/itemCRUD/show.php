@@ -4,7 +4,7 @@
             <h2> Show Item</h2>
         </div>
         <div class="pull-right">
-            <a class="btn btn-primary" href="<?php echo base_url('itemCRUD');?>"> Back</a>
+            <a class="btn btn-primary" href="<?php echo base_url('index.php/itemCRUD');?>"> Back</a>
         </div>
     </div>
 </div>

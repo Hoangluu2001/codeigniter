@@ -7,7 +7,7 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 
-$route['itemCRUD'] = "itemCRUD/index";
+$route['ItemCRUD/index'] = "itemCRUD";
 $route['itemCRUD/(:num)'] = "itemCRUD/show/$1";
 $route['itemCRUDCreate']['post'] = "itemCRUD/store";
 $route['itemCRUDEdit/(:any)'] = "itemCRUD/edit/$1";

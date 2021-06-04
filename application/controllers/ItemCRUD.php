@@ -18,6 +18,8 @@ class ItemCRUD extends CI_Controller {
       $this->load->library('form_validation');
       $this->load->library('session');
       $this->load->model('ItemCRUDModel');
+      $this->load->helper('url');
+     
 
 
       $this->itemCRUD = new ItemCRUDModel;
@@ -63,6 +65,7 @@ class ItemCRUD extends CI_Controller {
    */
    public function create()
    {
+       
       $this->load->view('theme/header');
       $this->load->view('itemCRUD/create');
       $this->load->view('theme/footer');   
@@ -85,8 +88,8 @@ class ItemCRUD extends CI_Controller {
             redirect(base_url('itemCRUD/create'));
         }else{
            $this->itemCRUD->insert_item();
-           redirect(base_url('itemCRUD'));
-        }
+           redirect(base_url('index.php/itemCRUD'));
+        } 
     }
 
 
@@ -122,7 +125,7 @@ class ItemCRUD extends CI_Controller {
             redirect(base_url('itemCRUD/edit/'.$id));
         }else{ 
           $this->itemCRUD->update_item($id);
-          redirect(base_url('itemCRUD'));
+          redirect(base_url('index.php/itemCRUD'));
         }
    }
 
@@ -135,6 +138,6 @@ class ItemCRUD extends CI_Controller {
    public function delete($id)
    {
        $item = $this->itemCRUD->delete_item($id);
-       redirect(base_url('itemCRUD'));
+       redirect(base_url('index.php/itemCRUD'));
    }
 }

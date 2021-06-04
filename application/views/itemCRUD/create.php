@@ -4,13 +4,13 @@
             <h2>Add New Item</h2>
         </div>
         <div class="pull-right">
-            <a class="btn btn-primary" href="<?php echo base_url('itemCRUD');?>"> Back</a>
+            <a class="btn btn-primary" href="<?php echo base_url('index.php/itemCRUD');?>"> Back</a>
         </div>
     </div>
 </div>
 
 
-<form method="post" action="<?php echo base_url('itemCRUDCreate');?>">
+<form method="post" action="<?php echo base_url('index.php/itemCRUDCreate');?>">
     <?php
 
 
@@ -24,7 +24,7 @@
     ?>
 
 
-    <div class="row">
+    <div class="row">   
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Title:</strong>
